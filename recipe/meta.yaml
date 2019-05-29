@@ -1,6 +1,6 @@
 {% set name = "radical.analytics" %}
-{% set version = "0.60.0" %}
-{% set sha256 = "3eecdff9ea526fddfca3c984452688cdb91e084f270413aa39a46847b4dd0114" %}
+{% set version = "0.60.1" %}
+{% set sha256 = "75de7682742b38187da5c87a84345384f4206faa3ac65553b8cc18d232c9cf60" %}
 
 package:
   name: {{ name|lower }}
