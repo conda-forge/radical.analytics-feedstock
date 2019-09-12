@@ -28,7 +28,7 @@ requirements:
     - numpy
     - sqlalchemy
     - radical.pilot
-    - more_itertools
+    - more-itertools
     
 test:
   imports:
