@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - radical.utils >= 1.0.0
+    - radical.utils >=1.0
     - matplotlib-base
     - psutil
     - pandas
