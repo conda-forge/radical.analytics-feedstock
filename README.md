@@ -3,7 +3,7 @@ About radical.analytics
 
 Home: https://github.com/radical-cybertools/radical.analytics
 
-Package license: GPL2
+Package license: GPL-2.0-only
 
 Feedstock license: BSD-3-Clause
 
