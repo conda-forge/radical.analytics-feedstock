@@ -1,6 +1,6 @@
 {% set name = "radical.analytics" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "251b043c2d4abe6967e37023841b60ee69d382ce35f35fc7e37819f3755abdbd" %}
+{% set version = "1.6.7" %}
+{% set sha256 = "9634f8070ae0a68c1f5519286a61e54467fe6e9fd1b5aadf69bec7ce72c3fe92" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py2k or win]
 
@@ -38,8 +38,7 @@ about:
   license: GPL-2.0-only
   license_family: GPL2
   license_file: LICENSE
-  summary: 'RADICAL-Anlytics is a library supporting the analysis of data produced by 
-    RADICAL-Cybertools.'
+  summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
   description: |
     RADICAL-Anlytics is a library supporting the analysis of data produced by 
     RADICAL-Cybertools. Currently, RADICAL-Analytics supports RADICAL-Pilot and
