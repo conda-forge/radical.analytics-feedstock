@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/radical.analyti
 
 Home: https://github.com/radical-cybertools/radical.analytics
 
-Package license: GPL-2.0-only
+Package license: MIT
 
 Summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
 
