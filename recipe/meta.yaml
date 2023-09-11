@@ -35,9 +35,9 @@ test:
 
 about:
   home: https://github.com/radical-cybertools/radical.analytics
-  license: GPL-2.0-only
-  license_family: GPL2
-  license_file: LICENSE
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
   summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
   description: |
     RADICAL-Anlytics is a library supporting the analysis of data produced by 
