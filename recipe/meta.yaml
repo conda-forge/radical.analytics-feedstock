@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py2k or win]
 
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - radical.utils >=1.4
+    - radical.utils >=1.12
     - matplotlib >=3.1.2
     - psutil
     - pandas
@@ -35,9 +35,9 @@ test:
 
 about:
   home: https://github.com/radical-cybertools/radical.analytics
-  license: GPL-2.0-only
-  license_family: GPL2
-  license_file: LICENSE
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.md
   summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
   description: |
     RADICAL-Anlytics is a library supporting the analysis of data produced by 
@@ -50,5 +50,5 @@ about:
 extra:
   recipe-maintainers:
     - andre-merzky
-    - iparask
+    - mtitov
     - mturilli
