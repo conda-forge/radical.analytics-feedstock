@@ -1,6 +1,6 @@
 {% set name = "radical.analytics" %}
-{% set version = "1.41.0" %}
-{% set sha256 = "47e748d7d856e90efa0084d49ae8349775e8b38f98cd5ebae39b2edb7f656d62" %}
+{% set version = "1.42.0" %}
+{% set sha256 = "70b2cc9674ef801aa7a3427181c968179745f841a57f82bfc750faa06bef1f79" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   skip: true  # [py2k or win]
 
