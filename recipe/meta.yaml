@@ -13,14 +13,14 @@ source:
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  noarch: python
+  skip: true  # [py<37 or win]
 
 requirements:
   host:
-    - python >=3.7
+    - python
     - pip
   run:
-    - python >=3.7
+    - python
     - radical.utils >=1.60
     - matplotlib >=3.1.2
     - psutil
