@@ -7,13 +7,13 @@ Home: https://github.com/radical-cybertools/radical.analytics
 
 Package license: MIT
 
-Summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
+Summary: RADICAL-Analytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
 
 Development: https://github.com/radical-cybertools/radical.analytics
 
 Documentation: https://radicalanalytics.readthedocs.io/en/latest/
 
-RADICAL-Anlytics is a library supporting the analysis of data produced by
+RADICAL-Analytics is a library supporting the analysis of data produced by
 RADICAL-Cybertools. Currently, RADICAL-Analytics supports RADICAL-Pilot and
 RADICAL-EnTK, and it has been used to support and develop the experimental
 analysis published by the RADICAL Group at Rutgers University.

@@ -1,19 +1,19 @@
 {% set name = "radical.analytics" %}
-{% set version = "1.48.2" %}
-{% set sha256 = "a145a8f9f9fdd0c8276058d906890c4f329abea68a955ead33db513b7afa4289" %}
+{% set version = "1.60.0" %}
+{% set sha256 = "c3ff81486fc3c2184208f166311bc291ee9837e0156dd934b22dba319e8321b0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace(".", "_") }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
-  skip: true  # [py2k or win]
+  skip: true  # [py<37 or win]
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - radical.utils >=1.40
+    - radical.utils >=1.60
     - matplotlib >=3.1.2
     - psutil
     - pandas
@@ -38,9 +38,9 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.md
-  summary: RADICAL-Anlytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
+  summary: RADICAL-Analytics is a library supporting the analysis of data produced by RADICAL-Cybertools.
   description: |
-    RADICAL-Anlytics is a library supporting the analysis of data produced by 
+    RADICAL-Analytics is a library supporting the analysis of data produced by 
     RADICAL-Cybertools. Currently, RADICAL-Analytics supports RADICAL-Pilot and
     RADICAL-EnTK, and it has been used to support and develop the experimental 
     analysis published by the RADICAL Group at Rutgers University.
