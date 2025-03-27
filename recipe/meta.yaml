@@ -1,13 +1,13 @@
 {% set name = "radical.analytics" %}
-{% set version = "1.81.0" %}
-{% set sha256 = "4e70e91ba7505b85df35050e1d484b8803e98a5a5ba4102d61cc56eaafcf1ac7" %}
+{% set version = "1.101.0" %}
+{% set sha256 = "811a325782ff819ad0481ea181420bb19af801e1ad22678d9b06400c5faa922b" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace(".", "_") }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace(".", "_") }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
